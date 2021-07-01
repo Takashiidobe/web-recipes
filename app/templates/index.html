@@ -138,7 +138,11 @@
 
   {% if instructions %}
   <h2>Instructions:</h2>
-  <p>{{instructions}}</p>
+  <ol>
+  {% for instruction in instructions: %}
+    <li>{{instruction}}</li> 
+  {% endfor %}
+  </ol>
   {% endif %}
 </body>
 </html>

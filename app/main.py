@@ -15,7 +15,7 @@ def main():
         title=r.title(), 
         total_time=r.total_time(),
         ingredients=r.ingredients(),
-        instructions=r.instructions(),
+        instructions=r.instructions().splitlines(),
         image=r.image(),
     ) 
     return template
