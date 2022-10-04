@@ -4,7 +4,6 @@ chardet==4.0.0
 click==8.0.1
 extruct==0.12.0
 Flask==2.0.1
-Flask-Cors==3.0.10
 gunicorn==20.1.0
 html-text==0.5.2
 html5lib==1.1

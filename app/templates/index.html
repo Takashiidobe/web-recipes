@@ -105,9 +105,14 @@
   </style>
 
   <meta name="description" content="Scrapes Recipes">
-  <meta property="og:title" content="Recipe Scraper">
-  <meta property="og:description" content="Page description">
+  {% if title %}
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{title}}">
+  {% endif %}
   <meta property="og:locale" content="en_US">
+  {% if image %}
+  <meta property="og:image" content="{{image}}">
+  {% endif %}
 </head>
 
 <body>
@@ -140,7 +145,7 @@
   <h2>Instructions:</h2>
   <ol>
   {% for instruction in instructions: %}
-    <li>{{instruction}}</li> 
+    <li>{{instruction}}</li>
   {% endfor %}
   </ol>
   {% endif %}
